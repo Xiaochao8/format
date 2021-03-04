@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/datasweet/format/date"
 	"github.com/stretchr/testify/assert"
+	"github.com/xiaochao8/format/date"
 	"golang.org/x/text/language"
 )
 

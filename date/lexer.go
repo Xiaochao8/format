@@ -3,7 +3,7 @@ package date
 import (
 	"strings"
 
-	"github.com/datasweet/format/lexer"
+	"github.com/xiaochao8/format/lexer"
 )
 
 const (

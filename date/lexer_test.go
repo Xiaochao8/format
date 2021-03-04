@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/datasweet/format/lexer"
+	"github.com/xiaochao8/format/lexer"
 )
 
 type lexTest struct {

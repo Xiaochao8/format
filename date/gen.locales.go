@@ -13,11 +13,12 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/datasweet/format/date/locales"
-
-	"github.com/datasweet/format/third_party/gen"
 	"github.com/datasweet/jsonmap"
 	"github.com/pkg/errors"
+
+	"github.com/xiaochao8/format/date/locales"
+	"github.com/xiaochao8/format/third_party/gen"
+
 	"golang.org/x/text/language"
 )
 
@@ -34,7 +35,8 @@ type keyIndex struct {
 }
 
 type translation struct {
-	lang      string
+	Lang      string
+	ULang     string
 	langData  []string
 	langIndex []uint32
 }
@@ -62,15 +64,21 @@ func main() {
 	}
 
 	for _, filename := range files {
-		tag := language.MustParse(filename[8 : len(filename)-5])
+		locale := filename[8 : len(filename)-5]
+		_, err := language.Parse(locale)
+		if err := nil {
+			log.Printf("invalid locale '%s'\n", locale)
+			continue
+		}
 
 		data, err := ioutil.ReadFile(filename)
 		die(errors.Wrapf(err, "read file %s", filename))
 
 		j := jsonmap.FromBytes(data)
-		lang := j.Get("main").Get(tag.String())
+		lang := j.Get("main").Get(locale)
 		if jsonmap.IsNil(lang) {
-			log.Fatalf("wrong lang : expected '%s' got '%s'", tag)
+			log.Printf("wrong lang : '%s'\n", locale)
+			continue
 		}
 
 		dates := lang.Get("dates.calendars.gregorian")
@@ -79,13 +87,14 @@ func main() {
 		}
 
 		translation := new(translation)
-		translation.lang = tag.String()
+		translation.Lang = locale
+		translation.ULang = strings.ReplaceAll(translation.Lang, "-", "_")
 		translation.langIndex = []uint32{0}
 		pos := 0
 
 		for _, keyIndex := range indexes {
 			s := dates.Get(keyIndex.xpath).AsString()
-			// fmt.Println(translation.lang, keyIndex.key, keyIndex.pos, keyIndex.xpath, s)
+			// fmt.Println(translation.Lang, keyIndex.key, keyIndex.pos, keyIndex.xpath, s)
 			pos += len(s)
 			translation.langData = append(translation.langData, s)
 			translation.langIndex = append(translation.langIndex, uint32(pos))
@@ -96,18 +105,8 @@ func main() {
 
 	cw := gen.NewCodeWriter()
 
-	langs := make([]string, 0, len(translations))
-	for _, tr := range translations {
-		langs = append(langs, tr.lang)
-	}
-
 	// Generate code file
-	x := &struct {
-		Languages []string
-	}{
-		Languages: langs,
-	}
-	err = lookup.Execute(cw, x)
+	err = lookup.Execute(cw, translations)
 	die(errors.Wrap(err, "tmpl"))
 
 	fmt.Fprint(cw, "var messageKeyToIndex = map[string]int{\n")
@@ -117,14 +116,14 @@ func main() {
 	fmt.Fprint(cw, "}\n\n")
 
 	for _, tr := range translations {
-		cw.WriteVar(fmt.Sprintf("%sIndex", tr.lang), tr.langIndex)
-		cw.WriteConst(fmt.Sprintf("%sData", tr.lang), strings.Join(tr.langData, ""))
+		cw.WriteVar(fmt.Sprintf("%sIndex", tr.ULang), tr.langIndex)
+		cw.WriteConst(fmt.Sprintf("%sData", tr.ULang), strings.Join(tr.langData, ""))
 	}
 	cw.WriteGoFile("locales/locales_gen.go", "locales")
 
 	// Generate test file
 	cw = gen.NewCodeWriter()
-	err = test.Execute(cw, x)
+	err = test.Execute(cw, translations)
 	die(errors.Wrap(err, "tmpl"))
 	cw.WriteGoFile("locales/locales_gen_test.go", "locales_test")
 
@@ -158,7 +157,8 @@ func (d *dictionary) Lookup(key string) (data string, ok bool) {
 }
 func init() {
 	locales = map[string]catalog.Dictionary{
-		{{range .Languages}}"{{.}}": &dictionary{index: {{.}}Index, data: {{.}}Data },
+		{{range .}}
+		"{{.Lang}}": &dictionary{index: {{.ULang}}Index, data: {{.ULang}}Data },
 		{{end}}
 	}
 }
@@ -168,22 +168,22 @@ var test = template.Must(template.New("test").Parse(`
 import (
 	"testing"
 
-	"github.com/datasweet/format/date/locales"
+	"github.com/xiaochao8/format/date/locales"
 	"github.com/stretchr/testify/assert"
 )
 type dictionary struct {
 	index []uint32
 	data  string
 }
-{{range .Languages}}
-func TestLocalize{{.}}(t *testing.T) {
+{{range .}}
+func TestLocalize{{.ULang}}(t *testing.T) {
 	for ft, fi := range locales.Fields {
 		for w := range fi.Widths {
 			for i := range fi.Keys {
 				key, ok := fi.Key(w, i)
 				assert.True(t, ok, key)
 				assert.NotEmpty(t, key, key)
-				s := locales.Localize("{{.}}", ft, w, i)
+				s := locales.Localize("{{.Lang}}", ft, w, i)
 				assert.NotEmpty(t, s, key)
 			}
 		}

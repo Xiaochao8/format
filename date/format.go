@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/datasweet/format/date/locales"
+	"github.com/xiaochao8/format/date/locales"
 	"golang.org/x/text/language"
 )
 

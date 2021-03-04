@@ -5,13 +5,2715 @@ package locales_test
 import (
 	"testing"
 
-	"github.com/datasweet/format/date/locales"
 	"github.com/stretchr/testify/assert"
+	"github.com/xiaochao8/format/date/locales"
 )
 
 type dictionary struct {
 	index []uint32
 	data  string
+}
+
+func TestLocalizeaf_NA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("af-NA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeaf(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("af", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeagq(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("agq", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeak(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ak", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeam(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("am", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_AE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-AE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_BH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-BH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_DJ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-DJ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_DZ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-DZ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_EG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-EG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_EH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-EH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_ER(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-ER", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_IL(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-IL", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_IQ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-IQ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_JO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-JO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_KM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-KM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_KW(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-KW", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_LB(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-LB", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_LY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-LY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_MA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-MA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_MR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-MR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_OM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-OM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_PS(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-PS", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_QA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-QA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_SA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-SA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_SD(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-SD", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_SO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-SO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_SS(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-SS", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_SY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-SY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_TD(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-TD", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_TN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-TN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear_YE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar-YE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizear(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ar", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeas(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("as", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeasa(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("asa", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeast(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ast", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeaz_Cyrl(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("az-Cyrl", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeaz_Latn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("az-Latn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeaz(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("az", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebas(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("bas", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebe(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("be", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebem(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("bem", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebez(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("bez", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebg(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("bg", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebm(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("bm", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebn_IN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("bn-IN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("bn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebo_IN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("bo-IN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("bo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebr(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("br", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebrx(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("brx", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebs_Cyrl(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("bs-Cyrl", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebs_Latn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("bs-Latn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizebs(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("bs", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeca_AD(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ca-AD", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeca_ES_VALENCIA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ca-ES-VALENCIA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeca_FR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ca-FR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeca_IT(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ca-IT", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeca(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ca", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeccp_IN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ccp-IN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeccp(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ccp", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizece(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ce", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizecgg(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("cgg", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizechr(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("chr", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeckb_IR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ckb-IR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeckb(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ckb", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizecs(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("cs", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizecu(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("cu", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizecy(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("cy", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeda_GL(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("da-GL", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeda(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("da", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizedav(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("dav", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizede_AT(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("de-AT", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizede_BE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("de-BE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizede_CH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("de-CH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizede_IT(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("de-IT", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizede_LI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("de-LI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizede_LU(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("de-LU", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizede(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("de", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizedje(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("dje", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizedsb(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("dsb", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizedua(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("dua", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizedyo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("dyo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizedz(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("dz", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeebu(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ebu", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeee_TG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ee-TG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeee(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ee", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeel_CY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("el-CY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeel(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("el", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_001(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-001", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_150(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-150", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_AG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-AG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_AI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-AI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_AS(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-AS", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_AT(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-AT", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_AU(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-AU", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_BB(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-BB", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_BE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-BE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_BI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-BI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_BM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-BM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_BS(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-BS", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_BW(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-BW", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_BZ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-BZ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_CA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-CA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_CC(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-CC", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_CH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-CH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_CK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-CK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_CM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-CM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_CX(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-CX", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_CY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-CY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_DE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-DE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_DG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-DG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_DK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-DK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_DM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-DM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_ER(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-ER", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_FI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-FI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_FJ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-FJ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_FK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-FK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_FM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-FM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_GB(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-GB", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_GD(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-GD", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_GG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-GG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_GH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-GH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_GI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-GI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_GM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-GM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_GU(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-GU", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_GY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-GY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_HK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-HK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_IE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-IE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_IL(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-IL", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_IM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-IM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_IN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-IN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_IO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-IO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_JE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-JE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_JM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-JM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_KE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-KE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_KI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-KI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_KN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-KN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_KY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-KY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_LC(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-LC", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_LR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-LR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_LS(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-LS", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_MG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-MG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_MH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-MH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_MO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-MO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_MP(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-MP", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_MS(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-MS", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_MT(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-MT", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_MU(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-MU", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_MW(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-MW", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_MY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-MY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_NA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-NA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_NF(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-NF", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_NG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-NG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_NL(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-NL", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_NR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-NR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_NU(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-NU", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_NZ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-NZ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_PG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-PG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_PH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-PH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_PK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-PK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_PN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-PN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_PR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-PR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_PW(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-PW", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_RW(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-RW", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_SB(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-SB", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_SC(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-SC", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_SD(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-SD", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_SE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-SE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_SG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-SG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_SH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-SH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_SI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-SI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_SL(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-SL", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_SS(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-SS", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_SX(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-SX", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_SZ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-SZ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_TC(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-TC", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_TK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-TK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_TO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-TO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_TT(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-TT", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_TV(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-TV", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_TZ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-TZ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_UG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-UG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_UM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-UM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_US_POSIX(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-US-POSIX", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_VC(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-VC", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_VG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-VG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_VI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-VI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_VU(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-VU", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_WS(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-WS", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_ZA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-ZA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_ZM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-ZM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeen_ZW(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("en-ZW", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
 }
 
 func TestLocalizeen(t *testing.T) {
@@ -28,6 +2730,1224 @@ func TestLocalizeen(t *testing.T) {
 	}
 }
 
+func TestLocalizeeo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("eo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_419(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-419", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_AR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-AR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_BO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-BO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_BR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-BR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_BZ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-BZ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_CL(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-CL", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_CO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-CO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_CR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-CR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_CU(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-CU", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_DO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-DO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_EA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-EA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_EC(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-EC", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_GQ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-GQ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_GT(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-GT", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_HN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-HN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_IC(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-IC", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_MX(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-MX", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_NI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-NI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_PA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-PA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_PE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-PE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_PH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-PH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_PR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-PR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_PY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-PY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_SV(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-SV", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_US(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-US", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_UY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-UY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees_VE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es-VE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizees(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("es", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeet(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("et", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeeu(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("eu", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeewo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ewo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefa_AF(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fa-AF", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefa(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fa", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeff_CM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ff-CM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeff_GN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ff-GN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeff_MR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ff-MR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeff(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ff", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefi(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fi", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefil(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fil", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefo_DK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fo-DK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_BE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-BE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_BF(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-BF", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_BI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-BI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_BJ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-BJ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_BL(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-BL", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_CA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-CA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_CD(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-CD", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_CF(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-CF", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_CG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-CG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_CH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-CH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_CI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-CI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_CM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-CM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_DJ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-DJ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_DZ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-DZ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_GA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-GA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_GF(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-GF", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_GN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-GN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_GP(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-GP", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_GQ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-GQ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_HT(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-HT", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_KM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-KM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_LU(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-LU", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_MA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-MA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_MC(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-MC", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_MF(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-MF", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_MG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-MG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_ML(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-ML", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_MQ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-MQ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_MR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-MR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_MU(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-MU", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_NC(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-NC", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_NE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-NE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_PF(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-PF", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_PM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-PM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_RE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-RE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_RW(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-RW", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_SC(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-SC", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_SN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-SN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_SY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-SY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_TD(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-TD", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_TG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-TG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_TN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-TN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_VU(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-VU", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_WF(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-WF", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefr_YT(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fr-YT", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
 func TestLocalizefr(t *testing.T) {
 	for ft, fi := range locales.Fields {
 		for w := range fi.Widths {
@@ -36,6 +3956,3380 @@ func TestLocalizefr(t *testing.T) {
 				assert.True(t, ok, key)
 				assert.NotEmpty(t, key, key)
 				s := locales.Localize("fr", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefur(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fur", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizefy(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("fy", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizega(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ga", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizegd(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("gd", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizegl(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("gl", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizegsw_FR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("gsw-FR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizegsw_LI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("gsw-LI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizegsw(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("gsw", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizegu(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("gu", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeguz(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("guz", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizegv(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("gv", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeha_GH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ha-GH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeha_NE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ha-NE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeha(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ha", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizehaw(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("haw", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizehe(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("he", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizehi(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("hi", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizehr_BA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("hr-BA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizehr(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("hr", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizehsb(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("hsb", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizehu(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("hu", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizehy(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("hy", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeid(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("id", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeig(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ig", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeii(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ii", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeis(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("is", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeit_CH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("it-CH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeit_SM(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("it-SM", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeit_VA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("it-VA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeit(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("it", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeja(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ja", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizejgo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("jgo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizejmc(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("jmc", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeka(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ka", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekab(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("kab", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekam(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("kam", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekde(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("kde", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekea(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("kea", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekhq(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("khq", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeki(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ki", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekk(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("kk", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekkj(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("kkj", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekl(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("kl", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekln(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("kln", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekm(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("km", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("kn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeko_KP(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ko-KP", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeko(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ko", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekok(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("kok", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeks(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ks", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeksb(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ksb", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeksf(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ksf", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeksh(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ksh", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizekw(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("kw", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeky(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ky", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizelag(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("lag", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizelb(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("lb", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizelg(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("lg", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizelkt(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("lkt", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeln_AO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ln-AO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeln_CF(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ln-CF", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeln_CG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ln-CG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeln(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ln", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizelo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("lo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizelrc_IQ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("lrc-IQ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizelrc(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("lrc", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizelt(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("lt", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizelu(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("lu", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeluo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("luo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeluy(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("luy", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizelv(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("lv", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemas_TZ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mas-TZ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemas(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mas", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemer(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mer", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemfe(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mfe", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemg(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mg", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemgh(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mgh", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemgo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mgo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemk(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mk", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeml(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ml", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemr(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mr", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizems_BN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ms-BN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizems_SG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ms-SG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizems(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ms", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemt(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mt", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemua(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mua", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemy(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("my", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizemzn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("mzn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenaq(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("naq", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenb_SJ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nb-SJ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenb(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nb", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizend(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nd", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizends_NL(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nds-NL", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizends(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nds", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizene_IN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ne-IN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizene(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ne", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenl_AW(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nl-AW", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenl_BE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nl-BE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenl_BQ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nl-BQ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenl_CW(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nl-CW", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenl_SR(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nl-SR", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenl_SX(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nl-SX", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenl(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nl", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenmg(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nmg", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizennh(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nnh", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenus(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nus", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizenyn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("nyn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeom_KE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("om-KE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeom(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("om", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeor(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("or", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeos_RU(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("os-RU", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeos(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("os", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizepa_Arab(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pa-Arab", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizepa_Guru(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pa-Guru", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizepa(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pa", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizepl(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pl", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeprg(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("prg", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeps(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ps", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizept_AO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pt-AO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizept_CH(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pt-CH", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizept_CV(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pt-CV", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizept_GQ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pt-GQ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizept_GW(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pt-GW", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizept_LU(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pt-LU", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizept_MO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pt-MO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizept_MZ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pt-MZ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizept_PT(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pt-PT", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizept_ST(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pt-ST", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizept_TL(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pt-TL", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizept(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("pt", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizequ_BO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("qu-BO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizequ_EC(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("qu-EC", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizequ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("qu", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizerm(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("rm", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizern(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("rn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizero_MD(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ro-MD", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizero(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ro", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizerof(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("rof", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeroot(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("root", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeru_BY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ru-BY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeru_KG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ru-KG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeru_KZ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ru-KZ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeru_MD(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ru-MD", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeru_UA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ru-UA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeru(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ru", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizerw(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("rw", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizerwk(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("rwk", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesah(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sah", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesaq(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("saq", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesbp(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sbp", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesd(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sd", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizese_FI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("se-FI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizese_SE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("se-SE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizese(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("se", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeseh(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("seh", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeses(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ses", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesg(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sg", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeshi_Latn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("shi-Latn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeshi_Tfng(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("shi-Tfng", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeshi(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("shi", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesi(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("si", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesk(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sk", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesl(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sl", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesmn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("smn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeso_DJ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("so-DJ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeso_ET(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("so-ET", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeso_KE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("so-KE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeso(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("so", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesq_MK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sq-MK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesq_XK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sq-XK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesq(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sq", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesr_Cyrl_BA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sr-Cyrl-BA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesr_Cyrl_ME(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sr-Cyrl-ME", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesr_Cyrl_XK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sr-Cyrl-XK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesr_Cyrl(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sr-Cyrl", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesr_Latn_BA(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sr-Latn-BA", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesr_Latn_ME(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sr-Latn-ME", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesr_Latn_XK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sr-Latn-XK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesr_Latn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sr-Latn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesr(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sr", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesv_AX(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sv-AX", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesv_FI(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sv-FI", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesv(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sv", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesw_CD(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sw-CD", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesw_KE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sw-KE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesw_UG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sw-UG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizesw(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("sw", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeta_LK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ta-LK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeta_MY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ta-MY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeta_SG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ta-SG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeta(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ta", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizete(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("te", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeteo_KE(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("teo-KE", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeteo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("teo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizetg(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("tg", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeth(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("th", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeti_ER(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ti-ER", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeti(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ti", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizetk(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("tk", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeto(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("to", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizetr_CY(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("tr-CY", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizetr(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("tr", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizett(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("tt", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizetwq(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("twq", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizetzm(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("tzm", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeug(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ug", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeuk(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("uk", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeur_IN(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ur-IN", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeur(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("ur", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeuz_Arab(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("uz-Arab", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeuz_Cyrl(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("uz-Cyrl", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeuz_Latn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("uz-Latn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeuz(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("uz", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizevai_Latn(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("vai-Latn", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizevai_Vaii(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("vai-Vaii", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizevai(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("vai", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizevi(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("vi", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizevo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("vo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizevun(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("vun", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizewae(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("wae", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizewo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("wo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizexog(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("xog", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeyav(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("yav", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeyi(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("yi", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeyo_BJ(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("yo-BJ", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeyo(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("yo", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeyue_Hans(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("yue-Hans", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizeyue_Hant(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("yue-Hant", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizezgh(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("zgh", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizezh_Hans_HK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("zh-Hans-HK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizezh_Hans_MO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("zh-Hans-MO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizezh_Hans_SG(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("zh-Hans-SG", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizezh_Hans(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("zh-Hans", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizezh_Hant_HK(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("zh-Hant-HK", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizezh_Hant_MO(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("zh-Hant-MO", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizezh_Hant(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("zh-Hant", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizezh(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("zh", ft, w, i)
+				assert.NotEmpty(t, s, key)
+			}
+		}
+	}
+}
+
+func TestLocalizezu(t *testing.T) {
+	for ft, fi := range locales.Fields {
+		for w := range fi.Widths {
+			for i := range fi.Keys {
+				key, ok := fi.Key(w, i)
+				assert.True(t, ok, key)
+				assert.NotEmpty(t, key, key)
+				s := locales.Localize("zu", ft, w, i)
 				assert.NotEmpty(t, s, key)
 			}
 		}
